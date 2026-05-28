@@ -5,13 +5,15 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "test": "node --import tsx --test src/*.test.ts"
   },
   "dependencies": {
     "vue": "^3.4.21"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^5.0.4",
+    "tsx": "^4.7.0",
     "typescript": "^5.4.0",
     "vite": "^5.2.0",
     "vue-tsc": "^2.0.0"
